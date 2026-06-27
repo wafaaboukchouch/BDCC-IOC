@@ -1,0 +1,9 @@
+<beans>
+
+    <bean id="dao" class="net.boukchouch.dao.DaoImpl"/>
+
+    <bean id="metier" class="net.boukchouch.metier.MetierImpl">
+        <property name="dao" ref="dao"/>
+    </bean>
+
+</beans>
